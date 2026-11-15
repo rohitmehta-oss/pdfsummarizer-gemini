@@ -7,7 +7,7 @@ This project is a from-scratch implementation with additional validation and tes
 
 ## Status
 
-Phase 2: PDF ingestion plus LangChain prompt templates and Gemini map-reduce summarization.
+Phase 3: Streamlit UI with upload, settings, document analysis, key quotes, and text/CSV exports.
 
 ## Setup
 
@@ -38,4 +38,6 @@ RUN_LIVE_TESTS=1 pytest tests/test_live_gemini.py
 streamlit run app.py
 ```
 
-The app is implemented in the next phases.
+Upload a PDF, choose a Gemini model and summary style, then process it. The app shows
+per-chunk statistics, the combined summary, optional document analysis and key quotes, and
+lets you download the report as text or CSV.
