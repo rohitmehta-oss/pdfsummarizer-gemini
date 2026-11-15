@@ -7,7 +7,7 @@ This project is a from-scratch implementation with additional validation and tes
 
 ## Status
 
-Phase 0: project scaffold, dependency setup, and Gemini/GitHub preflight validation.
+Phase 1: PDF text extraction, cleaning, token counting, chunking, and metadata.
 
 ## Setup
 
@@ -23,6 +23,13 @@ python scripts/check_setup.py
 ```
 
 Get a key at <https://aistudio.google.com/apikey>.
+
+## Test
+
+```bash
+pytest
+ruff check .
+```
 
 ## Run
 
