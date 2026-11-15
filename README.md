@@ -7,7 +7,7 @@ This project is a from-scratch implementation with additional validation and tes
 
 ## Status
 
-Phase 1: PDF text extraction, cleaning, token counting, chunking, and metadata.
+Phase 2: PDF ingestion plus LangChain prompt templates and Gemini map-reduce summarization.
 
 ## Setup
 
@@ -29,6 +29,7 @@ Get a key at <https://aistudio.google.com/apikey>.
 ```bash
 pytest
 ruff check .
+RUN_LIVE_TESTS=1 pytest tests/test_live_gemini.py
 ```
 
 ## Run
